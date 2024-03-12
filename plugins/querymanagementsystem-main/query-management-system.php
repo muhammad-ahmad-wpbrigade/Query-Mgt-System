@@ -3,7 +3,7 @@
 Plugin Name: Query Management System
 Description: This plugin will help to create the essential tables in database and add functionality to register and login users and showing them the data.
 Version: 1.0
-Author:  Team of four: (Abdullah Sarfraz, Ruqyya, Ahmad, Numan)
+Author:  Team of four: (Abdullah Sarfraz, Ruqyya, Ahmad)
 Author URI: http://querymanagement.local/
 */
 ?>
