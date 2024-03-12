@@ -616,6 +616,14 @@ function hrdashboard_shortcode() {
                 <br>
                 <label style="padding: 5px 20px; color:black;" for="" value="35" name="35"><?php echo $process_tickets; ?></label>
             </div>
+
+            <div class="processed" style=" border: 3px solid #fff; border-radius: 10px; margin-left: 10px; padding: 10px 20px;">
+                
+                <label style="color:#4d4dff;">Processed</label>
+                <br>
+                <label style="padding: 5px 20px; color:black;" for="" value="35" name="35"><?php echo $processed_tickets; ?></label>
+            </div>
+
         </div>
 
         <div style=" margin-top: 45px; text-align: center; margin-left: 320px;">
