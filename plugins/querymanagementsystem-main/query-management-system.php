@@ -570,6 +570,10 @@ function hrdashboard_shortcode() {
     $process = $wpdb->prepare("SELECT COUNT(*) FROM $table_name WHERE status= %s", $proc);
     $process_tickets = $wpdb->get_var($process);
 
+    $proces = "Processed";
+    $processed = $wpdb->prepare("SELECT COUNT(*) FROM $table_name WHERE status= %s", $proces);
+    $processed_tickets = $wpdb->get_var($processed);
+
 ?>
 
 <div class="head-section" style="background-color: #4dc3ff; display: flex;">
