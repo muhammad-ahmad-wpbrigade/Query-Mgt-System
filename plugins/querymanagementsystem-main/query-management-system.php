@@ -696,8 +696,8 @@ function hrdashboard_shortcode() {
                             $name = $row["name"];
                             $email = $row["email"];
                             $category = $row["category"];
-                            $description = $row["description"];
-                            $answers = $row["answers"];
+                            $description =  wp_trim_words( $row['description'], 5 ) ;
+                            $answers =  wp_trim_words( $row['answers'], 5 ) ;
                             $status = $row["status"];
                             $priorty = $row["priorty"];
 
