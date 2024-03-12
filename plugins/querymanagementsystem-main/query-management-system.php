@@ -775,18 +775,18 @@ function replyform_shortcode() {
             <br>
             <label for="name" style="color: #000; font-weight: 600; margin-right: 250px;">Employee Name:</label>
             <br>
-            <input type="text" value="<?php echo $name; ?>" placeholder="Enter your Name"
+            <input type="text" value="<?php echo $name; ?>" readonly placeholder="Enter your Name"
                    style="width: 26%; margin-top: 5px; border-radius: 8px; padding: 5px 10px;" id="name" name="name"/>
             <br>
             <br>
             <label for="e1" style="color: #000; font-weight: 600; margin-top: 5px; margin-right: 330px;">Email:</label>
             <br>
-            <input type="text" value="<?php echo $email; ?>" placeholder="Enter your valid email" id="e1"
+            <input type="text" value="<?php echo $email; ?>" readonly placeholder="Enter your valid email" id="e1"
                    style="width: 26%; margin-top: 5px; border-radius: 8px; padding: 5px 10px;" name="email"/>
             <br>
             <br>
             <label for="category" style="color: #000; font-weight: 600; margin-top: 5px;">Query Category:</label>
-            <select name="category" id="category" style="border: none; outline: none;">
+            <select name="category" id="category" style="border: none; outline: none;" disabled>
                 <option value="<?php echo $category; ?>"><?php echo $category; ?></option>
                 <option value="General">General</option>
                 <option value="Technical">Technical</option>
@@ -814,7 +814,7 @@ function replyform_shortcode() {
             <label for="desc" style="color: #000; font-weight: 600; margin-top: 5px; margin-right: 285px;">Description:</label>
             <br>
             <br>
-            <textarea id="desc" name="desc" rows="4" cols="50" style="outline: none;">
+            <textarea id="desc" name="desc" readonly placeholder="description" rows="4" cols="50" style="outline: none;">
                 <?php echo $description; ?>
             </textarea>
             <br>
