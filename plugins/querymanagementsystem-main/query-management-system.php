@@ -354,7 +354,7 @@ add_action( 'admin_post_nopriv_save_my_custom_form4', 'save_my_custom_form4' );
 add_action( 'admin_post_save_my_custom_form4', 'save_my_custom_form4' );
 
 
-//Query Form Submittion without name
+//Query Form Submission without name
 function save_my_custom_form5() {
 	global $wpdb;
     $table_name = $wpdb->prefix . 'queryform';
@@ -887,6 +887,10 @@ function save_my_custom_form9() {
 add_action('admin_post_nopriv_save_my_custom_form9', 'save_my_custom_form9');
 add_action('admin_post_save_my_custom_form9', 'save_my_custom_form9');
 
+// Register shortcode action hook
+add_action('init', function() {
+    add_shortcode('replyform_shortcode', 'replyform_shortcode');
+});
 
 function reportsystem_shortcode() {
     ?>
